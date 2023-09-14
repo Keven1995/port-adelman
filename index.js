@@ -6,6 +6,7 @@ const links = document.querySelectorAll(".navbar-links li a");
 let swiper = createSwiper(".mySwiper", ".swiper-pagination", "swiper-button-next", "swiper-button-prev");
 let header = document.getElementById('header');
 
+
 function createSwiper(container, pagination, nextButton, prevButton){
     return new Swiper(container, {
         slidesPerView: handleWidth(),
@@ -65,3 +66,4 @@ window.addEventListener('scroll', () => {
         header.style.background = 'transparent'
     }
 })
+
